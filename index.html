@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TIELBA GROUP OF COMPANIES, producteur de boissons à Tenkodogo, Burkina Faso. Eau, Coca, Fanta, Sprite, Tonic." />
+  <meta name="keywords" content="Tielba, boissons, eau, Coca, Fanta, Tenkodogo, Burkina Faso, entreprise de boisson, beverage company, water, soda, tonic" />
+  <meta name="author" content="TIELBA GROUP OF COMPANIES" />
   <title>TIELBA GROUP OF COMPANIES</title>
   <style>
     body {
@@ -29,6 +32,11 @@
       text-decoration: none;
       font-weight: bold;
     }
+    .lang-switcher {
+      text-align: right;
+      padding: 10px 20px;
+      font-size: 0.9em;
+    }
     .section {
       padding: 40px 20px;
     }
@@ -54,74 +62,108 @@
       padding: 20px;
       margin-top: 40px;
     }
-    .lang-switcher {
-      text-align: right;
-      padding: 10px 20px;
-      font-size: 0.9em;
-    }
+    .english { display: none; }
   </style>
+  <script>
+    function switchLanguage(lang) {
+      const fr = document.querySelectorAll('.french');
+      const en = document.querySelectorAll('.english');
+      if (lang === 'en') {
+        fr.forEach(el => el.style.display = 'none');
+        en.forEach(el => el.style.display = 'block');
+      } else {
+        en.forEach(el => el.style.display = 'none');
+        fr.forEach(el => el.style.display = 'block');
+      }
+    }
+  </script>
 </head>
 <body>
   <div class="lang-switcher">
-    <a href="#">🇬🇧 English</a> | <a href="#">🇫🇷 Français</a>
+    <a href="#" onclick="switchLanguage('fr')">🇫🇷 Français</a> | 
+    <a href="#" onclick="switchLanguage('en')">🇬🇧 English</a>
   </div>
   <header>
-    <h1>TIELBA GROUP OF COMPANIES</h1>
-    <p>Refreshing Burkina Faso, One Bottle at a Time</p>
+    <h1 class="french">TIELBA GROUPE DE SOCIÉTÉS</h1>
+    <h1 class="english">TIELBA GROUP OF COMPANIES</h1>
+    <p class="french">Rafraîchit le Burkina Faso, une bouteille à la fois</p>
+    <p class="english">Refreshing Burkina Faso, One Bottle at a Time</p>
   </header>
+
   <nav>
-    <a href="#about">About</a>
-    <a href="#products">Products</a>
-    <a href="#gallery">Gallery</a>
+    <a href="#about">À propos / About</a>
+    <a href="#products">Produits / Products</a>
+    <a href="#gallery">Galerie / Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section class="section" id="about">
-    <h2>About Us</h2>
-    <p>Based in Tenkodogo, Burkina Faso, TIELBA GROUP OF COMPANIES is committed to producing clean, refreshing beverages for everyone. From pure bottled water to globally trusted soft drinks like Coke, Fanta, and Sprite — we deliver satisfaction in every sip.</p>
+    <h2 class="french">À propos de nous</h2>
+    <h2 class="english">About Us</h2>
+    <p class="french">Basé à Tenkodogo, Burkina Faso, TIELBA GROUPE DE SOCIÉTÉS s'engage à produire des boissons propres et rafraîchissantes pour tous. De l'eau pure en bouteille aux boissons gazeuses mondialement reconnues comme le Coca, le Fanta et le Sprite — nous apportons la satisfaction à chaque gorgée.</p>
+    <p class="english">Based in Tenkodogo, Burkina Faso, TIELBA GROUP OF COMPANIES is committed to producing clean, refreshing beverages for everyone. From pure bottled water to globally trusted soft drinks like Coke, Fanta, and Sprite — we deliver satisfaction in every sip.</p>
   </section>
 
   <section class="section" id="products">
-    <h2>Our Products</h2>
+    <h2 class="french">Nos Produits</h2>
+    <h2 class="english">Our Products</h2>
     <div class="products">
       <div class="product">
-        <h3>Bottled Water</h3>
-        <p>Clean and safe drinking water for all occasions.</p>
+        <h3 class="french">Eau en bouteille</h3>
+        <h3 class="english">Bottled Water</h3>
+        <p class="french">Eau potable propre et sûre pour toutes les occasions.</p>
+        <p class="english">Clean and safe drinking water for all occasions.</p>
       </div>
       <div class="product">
-        <h3>Coke</h3>
-        <p>The classic taste that everyone loves.</p>
+        <h3>Coca</h3>
+        <p class="french">Le goût classique que tout le monde aime.</p>
+        <p class="english">The classic taste that everyone loves.</p>
       </div>
       <div class="product">
         <h3>Fanta</h3>
-        <p>Fruit-flavored fun in a bottle.</p>
+        <p class="french">Une boisson fruitée pleine de fun.</p>
+        <p class="english">Fruit-flavored fun in a bottle.</p>
       </div>
       <div class="product">
         <h3>Sprite</h3>
-        <p>Cool and refreshing lemon-lime drink.</p>
+        <p class="french">Une boisson citron-lime fraîche et pétillante.</p>
+        <p class="english">Cool and refreshing lemon-lime drink.</p>
       </div>
       <div class="product">
         <h3>Tonic</h3>
-        <p>Perfect bitter-sweet tonic water for mixers and more.</p>
+        <p class="french">Tonic amer-doux idéal pour les cocktails et plus.</p>
+        <p class="english">Perfect bitter-sweet tonic water for mixers and more.</p>
       </div>
     </div>
   </section>
 
   <section class="section" id="gallery">
-    <h2>Gallery</h2>
-    <p>Pictures coming soon!</p>
+    <h2 class="french">Galerie</h2>
+    <h2 class="english">Gallery</h2>
+    <p class="french">Photos à venir bientôt !</p>
+    <p class="english">Pictures coming soon!</p>
   </section>
 
   <section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Location:</strong> Tenkodogo, Burkina Faso</p>
-    <p><strong>Phone:</strong> +226 XXX XXX XXX</p>
-    <p><strong>Email:</strong> info@tielbagroup.com</p>
-    <p><strong>WhatsApp:</strong> <a href="#">Chat with us</a></p>
+    <h2 class="french">Contactez-nous</h2>
+    <h2 class="english">Contact Us</h2>
+    <p><strong class="french">Localisation:</strong> Tenkodogo, Burkina Faso</p>
+    <p><strong class="english">Location:</strong> Tenkodogo, Burkina Faso</p>
+    <p><strong class="french">Téléphone:</strong> +226 XXX XXX XXX</p>
+    <p><strong class="english">Phone:</strong> +226 XXX XXX XXX</p>
+    <p><strong class="french">Email:</strong> info@tielbagroup.com</p>
+    <p><strong class="english">Email:</strong> info@tielbagroup.com</p>
+    <p><strong class="french">WhatsApp:</strong> <a href="#">Discuter avec nous</a></p>
+    <p><strong class="english">WhatsApp:</strong> <a href="#">Chat with us</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 TIELBA GROUP OF COMPANIES. All rights reserved.</p>
+    <p class="french">&copy; 2025 TIELBA GROUPE DE SOCIÉTÉS. Tous droits réservés.</p>
+    <p class="english">&copy; 2025 TIELBA GROUP OF COMPANIES. All rights reserved.</p>
   </footer>
+
+  <script>
+    switchLanguage('fr');
+  </script>
 </body>
 </html>
